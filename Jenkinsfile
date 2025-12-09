@@ -1,5 +1,5 @@
 pipeline{
-    agent any {
+    agent node {
         label'AGENT-1'
     }
         stages{
@@ -15,10 +15,8 @@ pipeline{
             }
               stage('Deploy'){
                     steps{
-                            echo Deploying
+                            echo Deploying          
                     }
-
             }
-        }
-    
+           }
 }

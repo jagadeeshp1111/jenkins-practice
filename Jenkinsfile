@@ -6,12 +6,12 @@ pipeline{
         COURSE='jenkins'
     }
     options{
-        timeout{time: 5,unit:'SECONDS'}
+        timeout{time: 500,unit:'SECONDS'}
     }
         stages{
               stage('Build'){
                     steps{
-                            echo 'Building'
+                            echo 'Buildingg'
                     }
             }
               stage('Test'){
